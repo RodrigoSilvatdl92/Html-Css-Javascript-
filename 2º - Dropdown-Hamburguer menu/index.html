@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>section with dropdown menu</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaQuerys.css">
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <div class="logoimg"><img src="images/logo.svg" alt="logo"></div>
+    <button class="btn btnOpenMenu "><img src="images/icon-menu.svg" alt="open-menu"></button>
+    <button class="btn btnCloseMenu hidden "><img src="images/icon-close-menu.svg" alt="close-menu"></button>
+
+    <nav class="nav hidden">
+
+      <div class="menu">
+        <ul>
+          <li class="openSubmenu"><a href="#">Features</a> <img src="images/icon-arrow-down.svg" alt="icon-arrowDown">
+            <ul class="subMenu hidden ">
+              <li><a href="#"><img src="images/icon-todo.svg" alt="icon-todo"> Todo List</a> </li>
+              <li><a href="#"><img src="images/icon-calendar.svg" alt="icon-calendar"> Calendar</a></li>
+              <li><a href="#"><img src="images/icon-reminders.svg" alt="icon-reminders"> Reminders</a></li>
+              <li><a href="#"><img src="images/icon-planning.svg" alt="icon-planning"> Planning</a></li>
+            </ul>
+          </li>
+          <li class="openSubmenu"> <a href="#">Company</a> <img src="images/icon-arrow-down.svg" alt="icon-arrow-up">
+            <ul class="subMenu hidden ">
+              <li><a href="#">History</a> </li>
+              <li><a href="#">Our Team</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Carrers</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </div>
+      <div class="container-login ">
+        <button class="btncontainer login">Login</button>
+        <button class="btncontainer regist">Register</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="makeRemoteWorkContainer">
+      <h1>Make remote work</h1>
+      <div class="textRemoteWork">
+        <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch
+          productivity soar.</p>
+      </div>
+      <button class="btnLearnMore">Learn More</button>
+    </div>
+    <div class="imagemGrande"><img src="images/image-hero-mobile.png" alt="hero_mobile"></div>
+  </main>
+  <div class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Coded by <a href="#">Rodrigo Silva</a>.
+  </div>
+</body>
+
+
+</html>

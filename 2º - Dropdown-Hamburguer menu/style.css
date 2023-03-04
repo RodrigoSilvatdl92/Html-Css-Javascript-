@@ -1,0 +1,148 @@
+@media (min-width:961px) {
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        list-style: none;
+    }
+
+    .btnCloseMenu {
+        display: none;
+    }
+
+    .btnOpenMenu {
+        display: none;
+    }
+
+    body {
+        background-color: white;
+
+    }
+
+    header {
+        display: flex;
+        padding: 15px;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-left: 20px;
+    }
+
+    .menu>ul {
+        display: flex;
+    }
+
+    .menu li {
+        width: 120px;
+        margin-left: 0px;
+
+    }
+
+    .menu li:hover {
+        background-color: rgba(121, 119, 119, 0.781);
+    }
+
+    .subMenu {
+        position: absolute;
+        background-color: rgb(231, 228, 228);
+        display: none;
+    }
+
+    .menu li:hover .subMenu {
+        display: block;
+        transition: ease-in-out;
+    }
+
+    .subMenu li:hover {
+        background-color: rgba(121, 119, 119, 0.781);
+    }
+
+    .menu a {
+        font-size: 20px;
+        color: rgba(36, 36, 36, 0.751);
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+
+
+    .subMenu li {
+        padding:0px 5px;
+       
+    }
+
+
+    .btncontainer {
+        width: 170px;
+        height: 30px;
+        line-height: 30px
+    }
+
+    .login {
+        border: none;
+    }
+
+    .regist {
+        border-radius: 8px;
+        border: 1px solid rgba(86, 82, 82, 0.564);
+    }
+
+
+    main {
+        margin-top: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 90%;
+        margin: auto;
+        margin-top: 100px;
+    }
+
+    .makeRemoteWorkContainer {
+        max-width: 48%
+    }
+
+    .imagemGrande {
+        max-width: 48%;
+    }
+
+    .imagemGrande img {
+        width: 100%;
+    }
+
+    .makeRemoteWorkContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+    .makeRemoteWorkContainer h1 {
+        font-size: 60px;
+    }
+
+    .makeRemoteWorkContainer p {
+        font-size: 20px;
+    }
+
+    .makeRemoteWorkContainer button {
+        text-align: left;
+        width: fit-content;
+        background-color: rgba(0, 0, 0, 0.887);
+        border: none;
+        line-height: 30px;
+        height: 30px;
+        color: white;
+        border-radius: 5px;
+        padding: 0 10px;
+    }
+    
+    .attribution{
+        position:absolute;
+        bottom:0px;
+    }
+
+}

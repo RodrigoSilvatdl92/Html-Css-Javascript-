@@ -1,0 +1,175 @@
+@media(max-width:960px) {
+
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        list-style: none;
+    }
+
+    body {
+        background-color: white;
+
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    /* menu */
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        width: 200px;
+        background-color: white;
+        height: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        transition: 0.5s;
+        padding: 10px;
+        margin-top: 10px;
+
+    }
+
+    .menu {
+        margin-top: 30px;
+    }
+
+    .menu>ul {
+        display: block;
+    }
+
+    .menu li {
+        font-size: 20px;
+        color: rgba(36, 36, 36, 0.751);
+        padding-top: 5px;
+
+    }
+
+    .menu a:hover {
+        text-decoration: underline;
+    }
+
+    .menu a {
+        font-size: 20px;
+        color: rgba(36, 36, 36, 0.751);
+        text-decoration: none;
+        cursor: pointer;
+
+    }
+
+
+    .subMenu li {
+        margin-left: 10px;
+    }
+
+    .btn {
+        border: none;
+    }
+
+    .btnOpenMenu {
+        display: block;
+    }
+
+    .btnCloseMenu {
+        display: block;
+        position: absolute;
+        z-index: 5;
+        background-color: white;
+        right: 10px;
+    }
+
+    .btnOpenMenu:hover {
+        cursor: pointer;
+    }
+
+    .btnCloseMenu:hover {
+        cursor: pointer;
+    }
+
+
+    .hidden {
+        display: none;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr;
+
+    }
+
+    .imagemGrande {
+        grid-row: 1/2;
+        margin-top: 40px;
+
+    }
+
+    .imagemGrande>img {
+        max-width: 100vw;
+    }
+
+
+    .makeRemoteWorkContainer {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .textRemoteWork {
+        font-size: 20px;
+        margin-top: 20px;
+        color: rgba(128, 128, 128, 0.786);
+    }
+
+    .btnLearnMore {
+        margin-top: 30px;
+        width: 90px;
+        height: 35px;
+        line-height: 35px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.879);
+        border: none;
+        border-radius: 10px;
+    }
+
+
+    .container-login {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 10px;
+        margin-top: 20px;
+
+
+    }
+
+    .btncontainer {
+        width: 170px;
+        height: 30px;
+        line-height: 30px;
+
+    }
+
+    .login {
+        border: none;
+    }
+
+    .regist {
+        border-radius: 8px;
+        border: 1px solid rgba(86, 82, 82, 0.564);
+    }
+
+    .attribution{
+        position:absolute;
+        bottom:0px;
+    }
+
+
+}
