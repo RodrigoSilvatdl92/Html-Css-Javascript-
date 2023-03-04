@@ -1,0 +1,293 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background-image: linear-gradient(to right, rgb(75, 57, 136), rgb(17, 1, 36));
+
+}
+
+
+main {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.zone1 {
+    margin-top: 100px;
+    width: 450px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    border: 2px solid rgba(167, 166, 166, 0.698);
+    border-radius: 20px;
+    align-items: center;
+    padding: 10px;
+}
+
+.scoreContainer {
+    width: 100px;
+    height: 100px;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+
+.scorstr {
+    font-size: 20px;
+    color: white;
+}
+
+.scor {
+    font-size: 20px;
+    color: white;
+}
+
+.containerHands {
+    width: 450px;
+    height: 440px;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-image: url(images/bg-triangle.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 55%;
+}
+
+.circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: black;
+    margin: auto;
+    z-index: 5;
+    position: relative;
+    transition: all .1s ease-in-out;
+}
+
+.circle:hover {
+
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.circle1 {
+    background-color: rgb(83, 144, 243);
+
+}
+
+.circle1:hover {
+    background: rgb(83, 144, 243);
+    box-shadow: 0 0 10px rgb(83, 144, 243), 0 0 40px rgb(83, 144, 243), 0 0 80px rgb(83, 144, 243);
+
+}
+
+.circle2 {
+    background-color: rgb(248, 93, 73);
+}
+
+.circle2:hover {
+    background: rgb(248, 93, 73);
+    box-shadow: 0 0 10px rgb(248, 93, 73), 0 0 40px rgb(248, 93, 73), 0 0 80px rgb(248, 93, 73);
+}
+
+.circle3 {
+    grid-column: 1/3;
+    background-color: yellow;
+}
+
+.circle3:hover {
+    background: yellow;
+    box-shadow: 0 0 10px rgba(255, 255, 0, 0.444), 0 0 40px rgba(255, 255, 0, 0.444), 0 0 80px rgba(255, 255, 0, 0.444);
+}
+
+.movePlayer {
+    grid-column: 1/2;
+}
+
+
+.circle4 {
+    background-color: rgba(91, 70, 149, 0.824);
+    grid-column: 2/3;
+}
+
+
+.triangle {
+    position: absolute;
+
+}
+
+.containerSign {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: grey;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+
+}
+
+
+.signs {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+section {
+    width: 1400px;
+    margin: auto;
+    height: 100px;
+    text-align: right;
+}
+
+section>.botao {
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border: 1px solid white;
+    color: white;
+    font-size: 22px;
+    border-radius: 10px;
+}
+
+.rules {
+    position: absolute;
+    background-color: white;
+    width: 450px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    box-shadow: 1px 1px 1px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 2px;
+}
+
+.rulesUp {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.rulesUp>p {
+    padding: 15px;
+}
+
+.rulesUp>img {
+    padding: 15px;
+    cursor: pointer;
+}
+
+.rulesDown {
+    align-self: center;
+}
+
+
+
+.hidden {
+    display: none;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.316);
+    backdrop-filter: blur(3px);
+    z-index: 5;
+
+}
+
+.grid {
+    display: grid
+}
+
+.playContainer {
+    margin-top: 120px;
+    width: 450px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 2fr;
+
+}
+
+.playContainer p {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+
+.winOrLoseContainer {
+
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.575);
+    width: 450px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    box-shadow: 1px 1px 1px black;
+
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 2px;
+}
+
+.btnplayAgain {
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border: 1px solid black;
+    color: white;
+    background-color: black;
+    font-size: 22px;
+    border-radius: 10px;
+}
+
+.winOrLose {
+    font-size: 50px;
+    color: black;
+
+}
+
+.flex {
+    display: flex;
+}
+
+.attribution{
+    position:absolute;
+    bottom:0px;
+}
