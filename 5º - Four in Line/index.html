@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 em linha</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <div class="winnerDiv hidden">
+        <p class="winnerName"></p>
+        <p class="wins"></p>
+        <button class="restartGame">Restart Game</button>
+        <button class="newGameFromWinnerContainer">New Game</button>
+    </div>
+    <div class="overlay hidden"></div>
+    <div class="startContainer">
+        <div class="containerInput">
+            <input type="text" placeholder="Player 1..." class="inputPlayer1">
+            <input type="text" placeholder="Player 2..." class="inputPlayer2">
+        </div>
+        <p class="rulesTitle">Rules</p>
+        <p class="rules">Rules: The first to get a line of four pieces , either vertically , horizontally or diagonally
+            wins
+            the game .</p>
+        <button class="newGame">New Game</button>
+    </div>
+
+    <!--class="hidden"-->
+    <main class="hidden">
+        <div class="namesAndButton">
+            <div class="player player1"></div>
+            <button class="buttonRestart">Restart Game</button>
+            <div class="player player2"></div>
+        </div>
+
+        <div class="tableContainer">
+
+            <div class="square sa1">
+                <div value="1" class="circle bplay circlea1"></div>
+            </div>
+            <div class="square sa2">
+                <div value="2" class="circle bplay circlea2"></div>
+            </div>
+            <div class="square sa3">
+                <div value="3" class="circle bplay circlea3"></div>
+            </div>
+            <div class="square sa4">
+                <div value="4" class="circle bplay circlea4"></div>
+            </div>
+            <div class="square sa5">
+                <div value="5" class="circle bplay circlea5"></div>
+            </div>
+            <div class="square sa6">
+                <div value="6" class="circle bplay circlea6"></div>
+            </div>
+            <div class="square sa7">
+                <div value="7" class="circle bplay circlea7"></div>
+            </div>
+            <div class="square sb1">
+                <div class="circle circleb1"></div>
+            </div>
+            <div class="square sb2">
+                <div class="circle circleb2"></div>
+            </div>
+            <div class="square sb3">
+                <div class="circle circleb3"></div>
+            </div>
+            <div class="square sb4">
+                <div class="circle circleb4"></div>
+            </div>
+            <div class="square sb5">
+                <div class="circle circleb5"></div>
+            </div>
+            <div class="square sb6">
+                <div class="circle circleb6"></div>
+            </div>
+            <div class="square sb7">
+                <div class="circle circleb7"></div>
+            </div>
+            <div class="square sc1">
+                <div class="circle circlec1"></div>
+            </div>
+            <div class="square sc2">
+                <div class="circle circlec2"></div>
+            </div>
+            <div class="square sc3">
+                <div class="circle circlec3"></div>
+            </div>
+            <div class="square sc4">
+                <div class="circle circlec4"></div>
+            </div>
+            <div class="square sc5">
+                <div class="circle circlec5"></div>
+            </div>
+            <div class="square sc6">
+                <div class="circle circlec6"></div>
+            </div>
+            <div class="square sc7">
+                <div class="circle circlec7"></div>
+            </div>
+            <div class="square sd1">
+                <div class="circle circled1"></div>
+            </div>
+            <div class="square sd2">
+                <div class="circle circled2"></div>
+            </div>
+            <div class="square sd3">
+                <div class="circle circled3"></div>
+            </div>
+            <div class="square sd4">
+                <div class="circle circled4"></div>
+            </div>
+            <div class="square sd5">
+                <div class="circle circled5"></div>
+            </div>
+            <div class="square sd6">
+                <div class="circle circled6"></div>
+            </div>
+            <div class="square sd7">
+                <div class="circle circled7"></div>
+            </div>
+            <div class="square se1">
+                <div class="circle circlee1"></div>
+            </div>
+            <div class="square se2">
+                <div class="circle circlee2"></div>
+            </div>
+            <div class="square se3">
+                <div class="circle circlee3"></div>
+            </div>
+            <div class="square se4">
+                <div class="circle circlee4"></div>
+            </div>
+            <div class="square se5">
+                <div class="circle circlee5"></div>
+            </div>
+            <div class="square se6">
+                <div class="circle circlee6"></div>
+            </div>
+            <div class="square e7">
+                <div class="circle circlee7"></div>
+            </div>
+            <div class="square f1">
+                <div class="circle circlef1"></div>
+            </div>
+            <div class="square f2">
+                <div class="circle circlef2"></div>
+            </div>
+            <div class="square f3">
+                <div class="circle circlef3"></div>
+            </div>
+            <div class="square f4">
+                <div class="circle circlef4"></div>
+            </div>
+            <div class="square f5">
+                <div class="circle circlef5"></div>
+            </div>
+            <div class="square f6">
+                <div class="circle circlef6"></div>
+            </div>
+            <div class="square f7">
+                <div class="circle circlef7"></div>
+            </div>
+
+
+
+        </div>
+    </main>
+
+</body>
+
+</html>

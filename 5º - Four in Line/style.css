@@ -1,0 +1,211 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.hidden {
+    display: none;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.517);
+    backdrop-filter: blur(3px);
+    z-index: 10;
+}
+
+body {
+    background: linear-gradient(to right, rgb(22, 156, 218), rgb(35, 5, 64));
+}
+
+/* start container , names , rules and newGameButton */
+
+
+.startContainer {
+    padding: 10px;
+    z-index: 15;
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(220, 144, 30, 0.967);
+    z-index: 20;
+    box-shadow: 0 29px 52px rgba(0, 0, 0, 0.40), 0 25px 16px rgba(0, 0, 0, 0.20);
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+.containerInput {
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.containerInput>input {
+    width: 200px;
+    height: 30px;
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+
+.rulesTitle {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+.rules {
+    text-align: center;
+    font-size: 20px;
+
+}
+
+.newGame {
+    margin-top: 40px;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    background-color: rgb(177, 78, 12);
+    border-radius: 10px;
+}
+
+/*the game*/
+
+.namesAndButton {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    width: 700px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.player {
+    text-align: center;
+    width: 120px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 30px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(0, 0, 0) 0px 4px 3px 4px;
+}
+
+.bplay{
+    cursor:pointer;
+}
+
+.player1 {
+    background-color: rgba(199, 82, 31, 0.662);
+}
+
+.player2 {
+    background-color: rgb(194, 170, 94);
+}
+
+.buttonRestart {
+    height: 30px;
+    width: 120px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(0, 0, 0) 0px 2px 0px 0px;
+}
+
+
+.tableContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 480px;
+    background-color: rgb(69, 69, 69);
+    display: grid;
+    color: white;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        'a1 a2 a3 a4 a5 a6 a7'
+        'b1 b2 b3 b4 b5 b6 b7'
+        'c1 c2 c3 c4 c5 c6 c7'
+        'd1 d2 d3 d4 d5 d6 d7'
+        'e1 e2 e3 e4 e5 e6 e7'
+        'f1 f2 f3 f4 f5 f6 f7'
+    ;
+    z-index: 8;
+    border-radius: 10px;
+    box-shadow: 10px black;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(0, 0, 0) 0px 8px 5px 8px;
+
+}
+
+.square {
+    width: 80px;
+    height: 80px;
+    position: relative;
+}
+
+
+.circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    outline: none;
+    border: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    box-shadow: rgb(0, 0, 0) inset 0px 1px 2px, rgb(0, 0, 0) inset 0px 4px 5px 5px;
+}
+
+/* winner */
+
+.winnerDiv {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 500px;
+    height: 300px;
+    background-color: rgb(58, 56, 56);
+    border-radius: 10px;
+    z-index: 13;
+}
+
+.winnerDiv>.winnerName {
+    padding-top: 50px;
+    font-size: 50px;
+}
+
+.winnerDiv>.wins {
+    padding-top: 20px;
+    font-size: 40px;
+}
+
+.winnerDiv button {
+    margin-top: 50px;
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 10px;
+    border: none;
+
+}
