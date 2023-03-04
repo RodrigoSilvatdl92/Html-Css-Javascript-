@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projecto Cartão Cred</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaQuerrys.css">
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+
+  <div class="div1">
+    <div class="container-cards">
+      <div class="card card-front">
+        <div class="frontCard-logo"></div>
+        <div class="frontCard-number">0000 0000 0000 0000</div>
+        <div class="containerNamedate">
+          <div class="frontCard-name">Jane Appleseed</div>
+          <div class="frontCard-date">00/00</div>
+        </div>
+      </div>
+      <div class="card card-back">
+        <div class="backCard-cvc"></div>
+      </div>
+    </div>
+  </div>
+  <main>
+    <div class="div2">
+      <div class="container-form ">
+        <form class="form ">
+          <p class="strg">CARDHOLDER NAME</p>
+          <input type="text" class="input input-cardName" placeholder="e.g. Rodrigo Silva">
+          <p class="smallStrg smallStrg-name hidden">Can't be blank / wrong data</p>
+          <p class="strg">CARD NUMBER</p>
+          <input type="text" class="input input-cardNumber" placeholder="e.g 0000000000000000" max-length="16"
+            size="16">
+          <p class="smallStrg smallStrg-number hidden">Can't be blank / wrong data</p>
+          <div class="card-elements">
+            <p class="strg expdate">EXP.DATE</p>
+            <p class="strg mmyy">(MM/YY)</p>
+            <p class="strg cvc">CVC</p>
+            <input type="text" class="input input-cardmm" placeholder="MM">
+            <input type="text" class="input input-cardyy" placeholder="YY">
+            <input type="text" class="input input-cardcvc" placeholder="e.g. 123">
+            <p class="smallStrg smallStrg-data hidden">Can't be blank / wrong data</p>
+            <p class="smallStrg smallStrg-Cvc hidden">Can't be blank / wrong data</p>
+          </div>
+        </form>
+        <div class="sucessRegist hidden ">
+          <div class="btnCircle">&#10003</div>
+          <div class="sucessThankYou">THANK YOU!</div>
+          <div class="sucessDetails">We,ve added your card details</div>
+        </div>
+        <div>
+          <button class="btn-confirm">Confirm</button>
+          <button class="btn-continue hidden">Continue</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Rodrigo Silva</a>.
+  </div>
+</body>
+
+</html>
