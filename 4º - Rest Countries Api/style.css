@@ -1,0 +1,180 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+.hidden {
+    display: none;
+}
+
+/* header */
+
+
+header {
+    background-color: rgb(46, 55, 65);
+
+}
+
+.containerHeader {
+    max-width: 1400px;
+    line-height: 60px;
+    padding: 15px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.containerHeader>h1 {
+    color: white;
+}
+
+
+.btn {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-size: 18px;
+    padding-right: 10px;
+}
+
+
+/* Body */
+
+body {
+    background-color: rgb(26, 42, 51);
+}
+
+/* Search and Filter */
+
+main {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.containerSearchFilter {
+    padding: 15px;
+}
+
+.containerSearchFilter>form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.containerSearch {
+    width: 300px;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    background-color: rgb(46, 55, 65);
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.searchBar {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding-left: 5px;
+    color: white;
+}
+
+.btnSearch {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding-right: 5px;
+}
+
+.region {
+    background-color: rgb(46, 55, 65);
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+
+}
+
+
+option[value=""][disabled] {
+    display: none;
+}
+
+
+
+/* Paises */
+
+.containerCountrys {
+    max-width: 1400px;
+    margin-top: 100px;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.country {
+    margin: auto;
+    width: 300px;
+    height: 400px;
+    background-color: rgb(46, 55, 65);
+    margin: 10px;
+}
+
+.country img {
+    width: 100%;
+    height: 180px;
+
+}
+
+.countryData {
+    padding: 15px;
+}
+
+.country span {
+    color: white;
+    font-size: 18px;
+    font-weight: 200;
+
+}
+
+.country p {
+    color: rgba(255, 255, 255, 0.589);
+
+}
+
+.countryName {
+    font-size: 20px;
+    color: white;
+}
+
+.countryPopulation {
+    margin-top: 20px;
+}
+
+.countryRegion {
+    margin-top: 5px;
+
+}
+
+.countryCapital {
+    margin-top: 5px;
+}
+
+.attribution{
+    position:absolute;
+    top:0px;
+    left:0px;
+}

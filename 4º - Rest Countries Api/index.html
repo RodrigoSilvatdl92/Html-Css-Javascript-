@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countrys</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaQuerys.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body class="body">
+    <header>
+        <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+            Coded by <a href="#">Rodrigo Silva</a>.
+        </div>
+        <div class="containerHeader">
+            <h1>Where in the world?</h1>
+            <button class="btn darkMode hidden">🌑 Dark Mode</button>
+            <button class="btn lightMode">
+                &#9728 Light mode
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <div class="containerSearchFilter">
+            <form>
+                <div class="containerSearch">
+                    <input type="text" class="searchBar" placeholder="Search for a country...">
+                    <button class="btnSearch">🔍</button>
+                </div>
+
+                <select class="region">
+                    <option value="" disabled selected>Filter by Region</option>
+                    <option value="americas">Americas</option>
+                    <option value="europe">Europe</option>
+                    <option value="africa">Africa</option>
+                    <option value="asia">Asia</option>
+                    <option value="oceania">Oceania</option>
+                    <option value="allCountry">All Regions</option>
+                </select>
+            </form>
+        </div>
+
+        <div class="containerCountrys ">
+            <div class="country hidden">
+                <div>
+                    <img src="#" alt="country">
+                </div>
+                <div class="countryData">
+                    <span class="countryName">Germany</span>
+                    <p class="countryPopulation"> <span>Population:</span> 800</p>
+                    <p class="countryRegion"> <span>Region:</span> Europe</p>
+                    <p class="countryCapital"><span> Capital:</span> Berlin</p>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    
+</body>
+
+</html>
